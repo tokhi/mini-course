@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import Jumbotron from './Jumbotron'
+import Table from './Table/Table'
+
 class Home extends Component{
 	constructor(){
 		super()
@@ -17,6 +19,7 @@ class Home extends Component{
 		return(
 			<div> 
 				<Jumbotron/>
+				<Table/>
 			</div>
 			)
 	}
