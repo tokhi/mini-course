@@ -2,8 +2,8 @@ course = Course.create(title: "course 1 title", description: "Lorem ipsum dolor 
 section = Section.create(title: 'chapter 1', course: course)
 
 episodes = Episode.create([
-    { title: '1. Getting Started with Rails 6 and react', description: 'lorem test 12e', url: 'https://www.youtube.com/embed/B0SxxHAImhc', section: section},
-    { title: '2. Rails 6 React trouble shooting ', description: 'lorem test 12e', url: 'https://www.youtube.com/embed/B0SxxHAImhc', section: section},
-    { title: '3. Building a simple React app', description: 'lorem test 12e', url: 'https://www.youtube.com/embed/B0SxxHAImhc', section: section},
-    { title: '4. Adding React Router DOM to your App ', description: 'lorem test 12e', url: 'https://www.youtube.com/embed/B0SxxHAImhc', section: section}
+    { title: '1. Getting Started with Rails 6 and react', description: 'lorem test 12e', url: 'https://www.youtube.com/embed/dpYPLUO3QcI', section: section},
+    { title: '2. Rails 6 React trouble shooting ', description: 'lorem test 12e', url: 'https://www.youtube.com/embed/dpYPLUO3QcI', section: section},
+    { title: '3. Building a simple React app', description: 'lorem test 12e', url: 'https://www.youtube.com/embed/dpYPLUO3QcI', section: section},
+    { title: '4. Adding React Router DOM to your App ', description: 'lorem test 12e', url: 'https://www.youtube.com/embed/dpYPLUO3QcI', section: section}
 ])
