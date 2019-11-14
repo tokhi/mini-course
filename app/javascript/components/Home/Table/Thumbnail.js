@@ -4,7 +4,7 @@ import React from 'react'
 const Thumbnail = () => {
 	return(
 		<div className="pt-4 pb-4">
-			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/B0SxxHAImhc"></iframe>
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/dpYPLUO3QcI"></iframe>
 		</div>
 	)
 }
