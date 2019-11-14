@@ -1,25 +1,24 @@
-# README
+# Mini-Course
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails and react a mini course project which store all the course and chapters via activerecord and uses Axios to get the data from the Rails API and uses React Components to render.
 
-Things you may want to cover:
+Project Stack:
 
-* Ruby version
+* Rails
 
-* System dependencies
+* React
 
-* Configuration
+* Styled Components
 
-* Database creation
+* Bootstrap 4
 
-* Database initialization
+* Sqlite3
 
-* How to run the test suite
+## Project Setup
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# mini-course
+```
+bundle
+rake db:migrate
+rake db:seed
+rails s
+```
