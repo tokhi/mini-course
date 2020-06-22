@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_13_151918) do
+ActiveRecord::Schema.define(version: 2020_06_09_182457) do
 
   create_table "courses", force: :cascade do |t|
     t.string "title"
@@ -26,6 +26,9 @@ ActiveRecord::Schema.define(version: 2019_11_13_151918) do
     t.integer "section_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "premium"
+    t.string "author"
+    t.string "thumbnail"
     t.index ["section_id"], name: "index_episodes_on_section_id"
   end
 
@@ -36,6 +39,25 @@ ActiveRecord::Schema.define(version: 2019_11_13_151918) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["course_id"], name: "index_sections_on_course_id"
+  end
+
+  create_table "subscribers", force: :cascade do |t|
+    t.string "email"
+    t.string "source"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "episodes", "sections"

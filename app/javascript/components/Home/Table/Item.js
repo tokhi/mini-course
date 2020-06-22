@@ -21,19 +21,19 @@ const Button = styled.a`
 const Item = (props) => {
 	return(
 		<div className="row pt-4 pb-4">
-		  <div className="col-md-10 offset-md-1">
+		  <div className="col">
 		  	<div>
 		  		<div className="card px-5">
 		  			<div className="row">
 		  				<div className="col-md-4">
-		  					<Thumbnail/>
+		  					<Thumbnail thumbnail={props.thumbnail}/>
 		  				</div>
 		  				<div className="col-md-8">
 		  					<div className="pt-4 pb-4">
 		  						<h4>{props.title}</h4>
 		  						<p>{props.description}</p>
 		  						<div className="cta-wrapper">
-		  							<Button onClick={props.handleVideoChange} className="cta-btn">Watch This Video</Button>
+		  							<Button onClick={props.handleVideoChange} className="cta-btn">Start</Button>
 		  						</div>
 		  					</div>
 		  				</div>

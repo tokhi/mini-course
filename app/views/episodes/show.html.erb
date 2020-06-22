@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+<div class="row ">
+<div class='col'>
+<p>
+  <strong>Title:</strong>
+  <%= @episode.title %>
+</p>
+</div>
+<div class='col'>
+<p>
+  <strong>Description:</strong>
+  <%= @episode.description %>
+</p>
+</div>
+<div class='col'>
+<p>
+  <strong>Url:</strong>
+  <%= @episode.url %>
+</p>
+</div>
+<div class='col'>
+<p>
+  <strong>Premium:</strong>
+  <%= @episode.premium %>
+</p>
+</div>
+<div class='col'>
+<p>
+  <strong>Thumbnail:</strong>
+  <%= @episode.thumbnail %>
+</p>
+</div>
+<div class='col'>
+<p>
+  <strong>Author:</strong>
+  <%= @episode.author %>
+</p>
+</div>
+<div class='col'>
+<p>
+  <strong>Section:</strong>
+  <%= @episode.section_id %>
+</p>
+</div>
+<div class='col'>
+<%= link_to 'Edit', edit_episode_path(@episode) %> |
+<%= link_to 'Back', episodes_path %>
+</div>
+</div>
