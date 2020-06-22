@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
   root 'pages#index'
+  devise_for :users
   # get 'episodes', to: 'pages#episodes'
   get "api/:course_id/episodes",  to: 'pages#episodes'
   get 'api/courses', to: 'pages#courses'
