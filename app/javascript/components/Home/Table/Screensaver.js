@@ -62,7 +62,7 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "rgba(100, 100, 150, 0.92)",
+    backgroundColor: "rgba(140, 218, 231, 0.92)",
     fontSize: 32,
     color: "white"
   }
