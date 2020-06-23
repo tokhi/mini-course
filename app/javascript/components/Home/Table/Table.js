@@ -49,7 +49,7 @@ class Table extends Component{
 			return (
 				data.active ?
 				(<ActiveItem enableScreensaver={this.enableScreensaver.bind(this)} key={data.id} title={data.title} description={data.description} url={data.url} thumbnail={data.thumbnail} author={data.author}/>) :
-				<Item handleVideoChange={handleVideoChange} key={data.id} title={data.title} description={data.description} thumbnail={data.thumbnail}/>
+				<Item handleVideoChange={handleVideoChange} key={data.id} title={data.title} description={data.description} thumbnail={data.thumbnail} author={data.author} created_at={data.created_at} updated_at={data.updated_at}/>
 				
 			)
 		})

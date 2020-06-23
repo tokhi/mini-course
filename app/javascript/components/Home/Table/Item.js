@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Thumbnail from './Thumbnail'
 import styled from 'styled-components'
+import Jsonld from './Jsonld'
 
 const Button = styled.a`
 	display: inlinie-block;
@@ -21,6 +22,7 @@ const Button = styled.a`
 const Item = (props) => {
 	return(
 		<div className="row pt-4 pb-4">
+		  <Jsonld {...props} />
 		  <div className="col">
 		  	<div>
 		  		<div className="card px-5">

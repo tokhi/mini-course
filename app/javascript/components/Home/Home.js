@@ -34,7 +34,7 @@ class Home extends Component{
 			let results = []
 			data.data.map( (data) => {
 				// debugger
-				results.push({id: data.id, title: data.title, description: data.description, premium: data.premium, thumbnail: data.thumbnail, url: data.url, author: data.author, active: false})
+				results.push({id: data.id, title: data.title, description: data.description, premium: data.premium, thumbnail: data.thumbnail, url: data.url, author: data.author, created_at: data.created_at, updated_at: data.updated_at, active: false})
 				this.setState({course_modules: results})
 			})
 		})
@@ -67,7 +67,7 @@ class Home extends Component{
 			let results = []
 			data.data.map( (data) => {
 				// debugger
-				results.push({id: data.id, title: data.title, description: data.description, premium: data.premium, thumbnail: data.thumbnail, url: data.url, author: data.author, active: false})
+				results.push({id: data.id, title: data.title, description: data.description, premium: data.premium, thumbnail: data.thumbnail, url: data.url, author: data.author, created_at: data.created_at, updated_at: data.updated_at, active: false})
 				this.setState({course_modules: results})
 			})
 		})
