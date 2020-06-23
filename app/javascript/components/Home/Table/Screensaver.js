@@ -1,6 +1,8 @@
 import React, { useState, useCallback } from "react";
-
-// import "./styles.css";
+import {
+  BrowserView,
+  MobileView
+} from "react-device-detect";
 
 const SCREENSAVER_DELAY_MS = 31000;
 
@@ -37,7 +39,13 @@ function Screensaver() {
           style={styles.screensaver}
           onClick={screensaverClicked}
         >
-          <img src="/beach.jpg" />
+          <BrowserView>
+            <img src="https://storage.googleapis.com/shop-bucket/meditate/beach.jpg" />
+          </BrowserView>
+          <MobileView>
+            <img src="https://storage.googleapis.com/shop-bucket/meditate/beachMobile.jpg" />
+          </MobileView>
+
         </div>
       )}
     </div>
